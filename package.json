@@ -11,6 +11,9 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1"
+    "@11ty/eleventy": "^0.12.1",
+    "htm": "^3.0.4",
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
   }
 }

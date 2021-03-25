@@ -3,7 +3,6 @@ const html = require("htm").bind(React.createElement);
 
 exports.data = {
   layout: "layouts/main.11ty.js",
-  title: "Welcome to my blog",
 };
 
 exports.render = (data) => {

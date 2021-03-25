@@ -5,6 +5,7 @@ const Title = require("../components/title");
 
 exports.data = {
   layout: "layouts/render.11ty.js",
+  title: "I design, develop, discuss user experiences",
 };
 
 exports.render = (data) => {
@@ -12,9 +13,9 @@ exports.render = (data) => {
     <header>
       <nav>
         <ul>
-          <li><a href="/">Home</a></li>
+          <li><a href="/about">Who?</a></li>
           <li><a href="/blog/">Blog</a></li>
-          <li><a href="/about/">About</a></li>
+          <li><a href="/contact">Let's talk</a></li>
         </ul>
       </nav>
     </header>

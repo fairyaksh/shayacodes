@@ -1,5 +1,7 @@
-module.exports = {
-  dir: {
-    input: "src",
-  },
+module.exports = (eleventyConfig) => {
+  eleventyConfig.addPassthroughCopy("style.css");
+  eleventyConfig.addPassthroughCopy("src");
+  // dir: {
+  //   input: "src",
+  // },
 };

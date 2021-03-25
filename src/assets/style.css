@@ -1,0 +1,10 @@
+:root {
+  /* base styles */
+  --base-bg: hsl(0deg 0% 96%);
+  --base-font: 'Space Mono', monospace;
+}
+
+* {
+  font-family: var(--base-font);
+  background-color: var(--base-bg);
+}

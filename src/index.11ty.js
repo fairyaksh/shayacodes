@@ -1,6 +1,5 @@
 const React = require("react");
 const html = require("htm").bind(React.createElement);
-<link href="/style.css" />
 
 exports.data = {
   layout: "layouts/main.11ty.js",

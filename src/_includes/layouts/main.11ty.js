@@ -5,14 +5,17 @@ const Title = require("../components/title");
 
 exports.data = {
   layout: "layouts/render.11ty.js",
-  title: "I design, develop, discuss user experiences",
+  // title: "I design, develop & discuss user experiences",
 };
 
 exports.render = (data) => {
   return html`
     <header>
       <nav>
-        <ul>
+        <a href="/">
+          <img alt="Site Logo" src="../assets/images/sclogo.svg"/>
+        </a>
+        <ul class="navigation">
           <li><a href="/about">Who?</a></li>
           <li><a href="/blog/">Blog</a></li>
           <li><a href="/contact">Let's talk</a></li>

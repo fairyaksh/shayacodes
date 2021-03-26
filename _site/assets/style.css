@@ -2,9 +2,60 @@
   /* base styles */
   --base-bg: hsl(0deg 0% 96%);
   --base-font: 'Space Mono', monospace;
+  --base-link-color: hsl(236, 8%, 38%);
+  --base-link-inactive: none;
+  --base-link-hover: underline;
 }
 
 * {
   font-family: var(--base-font);
   background-color: var(--base-bg);
+  margin: 0;
+}
+
+header {
+  border: 2px solid red;
+  display: flex;
+  /* justify-content: space-between; */
+  align-items: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+nav a > img {
+  margin-left: 24px;
+}
+
+nav {
+  display: flex;
+}
+
+header ul > li{
+  border: 2px solid blue;
+  list-style-type: none;
+}
+
+.navigation {
+  display: flex;
+  border: 2px solid green;
+}
+.navigation a {
+  display: flex;
+  padding: 1em;
+}
+
+header a {
+  text-decoration: var(--base-link-inactive);
+  color: var(--base-link-color);
+}
+
+a:hover {
+  text-decoration: var(--base-link-hover);
+}
+
+.mockup-container {
+  border: 2px solid red;
+  width: fit-content;
+  margin-left: 221px;
+  margin-top: 55px;
 }

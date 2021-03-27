@@ -6,12 +6,15 @@
   --base-link-color: hsl(236, 8%, 38%);
   --base-link-inactive: none;
   --base-link-hover: underline;
+  --scrollbar-color: hsl(0, 0%, 82%);
+  --scrollbar-color-hover: hsl(0, 1%, 72%) ;
 }
 
 * {
   font-family: var(--base-font);
   background-color: var(--base-bg);
   margin: 0;
+  position: relative;
 }
 
 .site-logo {
@@ -48,7 +51,6 @@ a:hover {
 
 .landing-container {
   display: flex;
-  position: relative;
 }
 
 .mockup-container {
@@ -59,6 +61,7 @@ a:hover {
 }
 
 .site-title {
+  background-color: transparent;
   color: var(--base-text-color);
   font-weight: normal;
   font-size: 18px;
@@ -69,7 +72,6 @@ a:hover {
   margin-left: auto; 
   margin-right: auto; 
   text-align: center;
-  background-color: transparent;
 }
 
 .glasses-container {
@@ -77,10 +79,17 @@ a:hover {
   margin-left: 80px;
 }
 
+/* html {
+  position: relative;
+  border: 2px solid red;
+} */
+
 .tape-1 {
-  position: absolute;
+  /* position: absolute;
   right: 0;
-  top: 50%;
+  bottom: 40%; */
+  /* border: 2px solid red; */
+  background: transparent;
 }
 
 /* .posts-container {
@@ -89,6 +98,8 @@ a:hover {
 } */
 
 .tape-2 {
-  position: absolute;
-  bottom: 0;
+  /* position: absolute;
+  bottom: 0; */
+  /* border: 2px solid red; */
+  background: transparent;
 }

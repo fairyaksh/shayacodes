@@ -11,11 +11,13 @@ exports.data = {
 exports.render = (data) => {
   return html`
     <header>
-      <nav>
-        <a href="/">
-          <img alt="Site Logo" src="../assets/images/sclogo.svg"/>
-        </a>
-        <ul class="navigation">
+      <nav class="navbar">
+        <div>
+          <a href="/">
+            <img alt="Site Logo" class="site-logo" src="../assets/images/sclogo.svg"/>
+          </a>
+        </div>
+        <ul class="nav-container">
           <li><a href="/about">Who?</a></li>
           <li><a href="/blog/">Blog</a></li>
           <li><a href="/contact">Let's talk</a></li>

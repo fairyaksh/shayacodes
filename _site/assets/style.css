@@ -61,6 +61,7 @@ a:hover {
 .site-title {
   color: var(--base-text-color);
   font-weight: normal;
+  font-size: 18px;
   position: absolute;
   bottom: 70%;
   left: 0; 

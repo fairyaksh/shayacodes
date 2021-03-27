@@ -15,8 +15,8 @@ exports.render = (data) => {
       <div class="glasses-container">
         <img alt="Glasses" src="../assets/images/glasses.png"/>
       </div>
-      <img class="tape-1" alt="" src="../assets/images/tape1.svg"/>
     </section>
+    <img class="tape-1" alt="" src="../assets/images/tape1.svg"/>
     <section class="posts-container">
       <img class="tape-2" alt="" src="../assets/images/tape2.svg"/>
     </section>

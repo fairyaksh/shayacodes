@@ -8,6 +8,7 @@ const template = ({ title, prefetch, content }) => html`
       <link rel="stylesheet" href="assets/style.css" />
       <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400;1,700&display=swap">
       <meta charset="utf-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>${title}</title>
       <link rel="prefetch" href="/blog/" />
       <link rel="prefetch" href="/about/" />

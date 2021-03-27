@@ -2,6 +2,7 @@
   /* base styles */
   --base-bg: hsl(0deg 0% 96%);
   --base-font: 'Space Mono', monospace;
+  --base-text-color: hsl(0, 0%, 0%);
   --base-link-color: hsl(236, 8%, 38%);
   --base-link-inactive: none;
   --base-link-hover: underline;
@@ -16,21 +17,19 @@
 .site-logo {
   margin-left: 24px;
   margin-top: 20px;
-  /* height: 80px; */
+  height: 60px;
 }
 
 nav {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  /* border: 2px solid black; */
 }
 
 .nav-container {
   display: flex;
   margin: auto;
   list-style-type: none;
-  /* border: 2px solid green; */
 }
 .nav-container li {
   display: inline-block; 
@@ -47,9 +46,48 @@ a:hover {
   text-decoration: var(--base-link-hover);
 }
 
+.landing-container {
+  display: flex;
+  position: relative;
+}
+
 .mockup-container {
-  /* border: 2px solid red; */
   width: fit-content;
-  margin-left: 221px;
+  margin-left: 108px;
   margin-top: 40px;
+  position: relative;
+}
+
+.site-title {
+  color: var(--base-text-color);
+  font-weight: normal;
+  position: absolute;
+  bottom: 70%;
+  left: 0; 
+  right: 0; 
+  margin-left: auto; 
+  margin-right: auto; 
+  text-align: center;
+  background-color: transparent;
+}
+
+.glasses-container {
+  margin-top: 127px;
+  margin-left: 80px;
+}
+
+.tape-1 {
+  position: absolute;
+  right: 0;
+  top: 50%;
+}
+
+/* .posts-container {
+  position: relative;
+  border: 2px solid red;
+} */
+
+.tape-2 {
+  position: absolute;
+  bottom: 0;
 }

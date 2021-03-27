@@ -14,7 +14,7 @@ exports.render = (data) => {
       <nav class="navbar">
         <div>
           <a href="/">
-            <img alt="Site Logo" class="site-logo" src="../assets/images/sclogo.svg"/>
+            <img alt="Site Logo" class="site-logo" src="../assets/images/sclogo.png"/>
           </a>
         </div>
         <ul class="nav-container">
@@ -25,7 +25,6 @@ exports.render = (data) => {
       </nav>
     </header>
     <main>
-      <${Title}>${data.title}</${Title}>
       ${data.content}
     </main>
   `;

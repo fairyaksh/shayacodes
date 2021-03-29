@@ -14,7 +14,7 @@ exports.render = (data) => {
       <nav class="navbar">
         <div>
           <a href="/">
-            <img alt="Site Logo" class="site-logo" src="../assets/images/sclogo.png"/>
+            <img alt="Site Logo" draggable=”false” class="site-logo" src="../assets/images/sclogo.png"/>
           </a>
         </div>
         <ul class="nav-container">

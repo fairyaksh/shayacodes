@@ -3,6 +3,7 @@
   --base-bg: hsl(0deg 0% 96%);
   --base-font: 'Space Mono', monospace;
   --base-text-color: hsl(0, 0%, 0%);
+  --base-text-color-maroon: hsl(1, 61%, 27%);
   --base-link-color: hsl(236, 8%, 38%);
   --base-link-inactive: none;
   --base-link-hover: underline;
@@ -11,9 +12,11 @@
 }
 
 * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
   font-family: var(--base-font);
   background-color: var(--base-bg);
-  margin: 0;
   position: relative;
 }
 
@@ -60,36 +63,101 @@ a:hover {
   position: relative;
 }
 
+/* Typewriter animation */
+
 .site-title {
   background-color: transparent;
   color: var(--base-text-color);
   font-weight: normal;
   font-size: 18px;
   position: absolute;
-  bottom: 70%;
+  bottom: 67%;
   left: 0; 
   right: 0; 
   margin-left: auto; 
   margin-right: auto; 
   text-align: center;
+  user-select: none;
+}
+
+.emphasise-text {
+  color: var(--base-text-color-maroon);
+  background-color: transparent;
+}
+
+.text1{
+  animation: text-1;
+}
+
+.text2 {
+  animation: text-2;
+}
+
+.text1, .text2 {
+  background-color: transparent;
+  overflow: hidden;
+  white-space: nowrap;
+  display: inline-block;
+  position: relative;
+  animation-duration: 12s; /*speed of typing*/
+  animation-timing-function: steps(25, end);
+  animation-iteration-count: infinite;
+}
+
+.text1::after, .text2::after {
+  content: "|";
+  position: absolute;
+  right: 0;
+  animation: cursorBlink infinite;
+  animation-duration: 1s;/*speed of blinking*/
+  animation-timing-function: steps(1, end);
+}
+
+@keyframes cursorBlink {
+  0%, 100% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+}
+
+@keyframes text-1 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+   60%, 90% {
+    width: 27.5ch;
+  }
+}
+
+@keyframes text-2 {
+  0%, 50%, 100% {
+    width: 0;
+  }
+  10%, 40% {
+    width: 26.5ch;
+  }
 }
 
 .glasses-container {
   margin-top: 127px;
   margin-left: 80px;
 }
+img {
+  -webkit-user-drag: none;
 
+}
 /* html {
   position: relative;
   border: 2px solid red;
 } */
 
 .tape-1 {
-  /* position: absolute;
-  right: 0;
-  bottom: 40%; */
-  /* border: 2px solid red; */
   background: transparent;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
 }
 
 /* .posts-container {
@@ -98,8 +166,6 @@ a:hover {
 } */
 
 .tape-2 {
-  /* position: absolute;
-  bottom: 0; */
   /* border: 2px solid red; */
   background: transparent;
 }

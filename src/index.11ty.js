@@ -9,16 +9,23 @@ exports.render = (data) => {
   return html`
     <section class="landing-container">
       <div class="mockup-container">
-        <img alt="Browser Mockup" src="../assets/images/browser-mockup.svg"/>
-        <h1 class="site-title">I design user experiences.</h1>
+        <img alt="Browser Mockup" draggable=”false” src="../assets/images/browser-mockup.svg"/>
+        <h1 class="site-title">
+          <span class="text1">
+            I <span class="emphasise-text"> develop </span> user experiences.
+          </span>
+          <span class="text2">
+            I <span class="emphasise-text">design</span> user experiences.
+          </span>
+        </h1>
       </div>
       <div class="glasses-container">
-        <img alt="Glasses" src="../assets/images/glasses.png"/>
+        <img alt="Glasses" draggable=”false” src="../assets/images/glasses.png"/>
       </div>
+      <img class="tape-1" alt="" draggable=”false” src="../assets/images/tape1.svg"/>
     </section>
-    <img class="tape-1" alt="" src="../assets/images/tape1.svg"/>
     <section class="posts-container">
-      <img class="tape-2" alt="" src="../assets/images/tape2.svg"/>
+      <img class="tape-2" alt="" draggable=”false” src="../assets/images/tape2.svg"/>
     </section>
   `;
 };

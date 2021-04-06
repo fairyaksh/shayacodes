@@ -1,22 +1,23 @@
 const React = require("react");
 const html = require("htm").bind(React.createElement);
 
-const Title = require("../components/title");
-
 exports.data = {
   layout: "layouts/render.11ty.js",
-  // title: "I design, develop & discuss user experiences",
 };
 
 exports.render = (data) => {
   return html`
     <header>
-      <nav class="navbar">
-        <div>
-          <a href="/">
-            <img alt="Site Logo" draggable=”false” class="site-logo" src="../assets/images/sclogo.png"/>
-          </a>
-        </div>
+      <div>
+        <a href="/">
+          <img alt="Site Logo" draggable=”false” class="site-logo" src="../assets/images/sclogo.png"/>
+        </a>
+      </div>
+      <label for="burger-menu" class="menu-icon" id="menu-icon" tabindex="0">
+        ☰
+      </label>
+      <input type="checkbox" id="burger-menu" class="menu-checkbox"/>
+      <nav class="navbar" aria-label="Main menu">
         <ul class="nav-container">
           <li><a href="/about">Who?</a></li>
           <li><a href="/blog/">Blog</a></li>

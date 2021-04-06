@@ -20,7 +20,7 @@ exports.render = (data) => {
       <nav class="navbar" aria-label="Main menu">
         <ul class="nav-container">
           <li><a href="/about">Who?</a></li>
-          <li><a href="/blog/">Blog</a></li>
+          <li><a href="/blog">Blog</a></li>
           <li><a href="/contact">Let's talk</a></li>
         </ul>
       </nav>

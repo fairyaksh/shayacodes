@@ -1,6 +1,4 @@
-/* ----- Base Styles ----- */
-
-:root {
+:root { /* ----- Base Styles ----- */
   --base-bg: hsl(0deg 0% 96%);
   --base-font: 'Space Mono', monospace;
   --base-text-color: hsl(0, 0%, 0%);

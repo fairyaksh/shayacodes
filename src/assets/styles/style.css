@@ -1,0 +1,139 @@
+/* ----- Base Styles ----- */
+
+:root {
+  --base-bg: hsl(0deg 0% 96%);
+  --base-font: 'Space Mono', monospace;
+  --base-text-color: hsl(0, 0%, 0%);
+  --base-text-color-maroon: hsl(1, 61%, 27%);
+  --base-faded-color: hsl(236, 8%, 38%);
+  --base-link-inactive: none;
+  --base-link-hover: underline;
+  --scrollbar-color: hsl(0, 0%, 82%);
+  --scrollbar-color-hover: hsl(0, 1%, 72%) ;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: var(--base-font);
+  background-color: var(--base-bg);
+  position: relative;
+}
+
+.site-logo {
+  display: inline;
+  float: left;
+  height: 40px;
+  position: absolute;
+  z-index: 1;
+}
+
+/* ----- Header ----- */
+  /* mobile hamburger menu */
+header {
+  padding: 14px 10px;
+  position: relative;
+}
+
+.menu-checkbox, .navbar {
+  display: none;
+}
+
+.menu-icon {
+  cursor: pointer;
+  display: inline-block;
+  margin-left: 80vw;
+  padding: 0px 20px;
+  position: relative;
+  user-select: none;
+}
+
+/* medium screen sizes menu */
+@media screen and (min-width: 500px) {
+  .site-logo {
+    height: 70px;
+  }
+  .menu-icon, .menu-checkbox {
+    display: none;
+  }
+  .navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-container {
+    display: flex;
+    list-style-type: none;
+  }
+  .nav-container a {
+    display: flex;
+    padding: 10px 20px;
+  } 
+}
+
+@media screen and (min-width: 600px) {
+  .nav-container a {
+    padding: 20px 50px;
+  }
+  .site-logo {
+    height: 60px;
+  } 
+}
+
+/* large screen sizes menu */
+@media screen and (min-width: 1024px) {
+  .nav-container a {
+    padding: 20px 100px;
+  } 
+  .site-logo {
+    margin: 5px 5px;
+  } 
+}
+
+header a {
+  text-decoration: var(--base-link-inactive);
+  color: var(--base-faded-color);
+}
+
+a:hover {
+  text-decoration: var(--base-link-hover);
+}
+
+/* ----- Home Page ----- */
+
+.landing-container {
+  display: flex;
+}
+
+.mockup-container {
+  width: fit-content;
+  margin-left: 108px;
+  margin-top: 40px;
+  position: relative;
+}
+
+.glasses-container {
+  margin-top: 127px;
+  margin-left: 80px;
+}
+
+img {
+  -webkit-user-drag: none;
+}
+
+.tape-1 {
+  background: transparent;
+  position: absolute;
+  bottom: 10%;
+  right: 0;
+}
+
+/* .posts-container {
+  position: relative;
+  border: 2px solid red;
+} */
+
+.tape-2 {
+  background: transparent;
+}

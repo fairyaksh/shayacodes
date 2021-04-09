@@ -13,8 +13,8 @@ const template = ({ title, prefetch, content }) => html`
       <meta charset="utf-8" />
       <meta name="viewport" content="width=device-width, initial-scale=1">
       <title>Home | Shaya - Front End Engineer</title>
-      <link rel="prefetch" href="/blog/" />
       <link rel="prefetch" href="/about/" />
+      <link rel="prefetch" href="/blog/" />
       <link rel="prefetch" href="/contact/" />
       ${prefetch
         ? prefetch.map((url) => html`<link rel="prefetch" href="${url}" />`)
@@ -22,6 +22,7 @@ const template = ({ title, prefetch, content }) => html`
     </head>
     <body>
       ${content}
+      <script src="/assets/cursor.js"></script>
     </body>
   </html>
 `;

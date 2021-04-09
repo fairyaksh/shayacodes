@@ -19,6 +19,16 @@
   position: relative;
 }
 
+.circle {
+	position: absolute;
+  border: solid 1px var(--base-text-color);
+	width: 60px; 
+	height: 60px; 
+  border-radius: 50%;
+  z-index: 99;
+  background: transparent;
+}
+
 .site-logo {
   display: inline;
   float: left;
